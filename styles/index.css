@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey1: #f8f8ff;
+    --grey2: #f3f4f5;
+    --grey3: #65676b;
+    --grey4: #a2a5a5;
+    --brand: #b95e9b;
+
+}
+
+.brand {
+    color: var(--brand);
+}
+
+body {
+    background-color: --grey2;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    width: calc(100% - 48px)
+}
+
+.flex-container {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+
+}
+
+.justify-center {
+    justify-content: center;
+
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+a:link {
+    color: violet;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+
+
+}
+
+#navbar {
+    background-color: white;
+    width: 100%;
+    height: 72px;
+
+}
+
+#search li,
+#nav-list li {
+    padding: 10px 16px;
+    border-radius: 16px;
+    color: var(--grey3);
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+#search {
+    margin-top: 15px;
+}
+
+.active-link {
+    background-color: var(--grey2);
+}
+
+#ciao {
+    background-color: var(--grey2);
+    height: 200px;
+
+
+}
+
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    opacity: 0;
+    color: violet;
+    animation-name: fadeInFromRight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transform: translate(100px);
+
+
+
+
+}
+
+h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+    margin-top: 14px;
+
+
+}
+
+h3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    ;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin-top: 14px;
+
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        opacity: 0%;
+        transform: translate(100px);
+    }
+
+
+    100% {
+        opacity: 50%;
+        transform: translate (0px);
+
+    }
+}
+
+
+
+
+
+#search input {
+    max-width: 367px;
+    width: 100;
+    height: 48px;
+    border: none;
+    border-radius: 16px;
+    background-color: var(--grey2);
+    padding-left: 30px;
+    outline: none;
+    font-size: 16px;
+
+}
+
+.fixed-article {
+    margin-top: 56px;
+}
+
+#main article {
+    gap: 151px;
+
+}
+
+#main article .text-container {
+    flex-direction: column;
+    gap: 15px;
+}
+
+#main-article .image-container {
+    position: relative;
+    width: 530px;
+    height: 341px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+    background-color: var(--grey2);
+    border-radius: 10%;
+
+}
+
+#main-article .image-container .img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.first-paragraph {
+    color: rgb(78, 74, 79);
+    line-height: 1.6;
+    letter-spacing: 0.06rem;
+    max-width: 45ch;
+
+}
+
+.submit-btn {
+    border-radius: 5px;
+    background-color: var(--grey2);
+
+}
+
+.comunity-container h3 {
+    margin-top: 20px;
+    margin-bottom: 56px;
+    font-size: 65px;
+    line-height: 100px;
+    font-weight: 800px;
+}
+
+
+.comunity-container .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 51px 116px;
+
+}
+
+.comunity-container p {
+    font-size: 24px;
+    line-height: 31px;
+    color: var(--grey3);
+}
+
+.icon-wrapper {
+    gap: 31px;
+    font-size: 31px;
+}
+
+.comunity-container form {
+    border-radius: 100px;
+    width: 368px;
+    height: 56px;
+    overflow: hidden;
+    background: var(--grey2);
+}
+
+.comunity-container input {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: var(--grey3);
+    background-color: var(--grey2);
+    font-weight: 300px;
+    padding-left: 20px;
+
+}
+
+.comunity-container button[type="submit"] {
+    border: none;
+    background-color: var(--grey4);
+    padding: 10px, 16px;
+    border-radius: 100px;
+    font-weight: 600;
+    width: 110px;
+    cursor: pointer;
+    transition: all 175ms ease-in-out;
+
+}
+
+.comunity-container button[type="submit"]:hover {
+    color: white;
+    background-color: var(--brand);
+}
+
+footer {
+    background-color: rgb(2, 66, 42);
+}
+
+footer .footer-link-container {
+    margin-top: 180px;
+    gap: 117px;
+
+}
+
+footer .grid-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 51px 130px;
+    margin-bottom: 60px;
+}
